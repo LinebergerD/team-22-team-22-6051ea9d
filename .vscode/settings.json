@@ -1,0 +1,6 @@
+{
+    "python.testing.pytestPath": "pytest",
+    "python.testing.pytestArgs": ["-v", "--disable-warnings"],
+    "python.testing.unittestEnabled": true,
+    "python.testing.pytestEnabled": true,
+}
