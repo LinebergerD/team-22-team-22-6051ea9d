@@ -11,4 +11,8 @@ Make file contains commands needed.
 * `make test-acceptance` Runs acceptance tests
 
 * `make run` Runs the program
+<<<<<<< HEAD
 David was here
+=======
+Doug was here
+>>>>>>> b172dda (Test commit)
