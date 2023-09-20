@@ -17,3 +17,4 @@ Start new game with character
     Starting X coordinate should be    ${startingPositionX}
     Starting Y coordinate should be    ${startingPositionY}
     Starting move count should be      ${startingMoveCount}
+    # test by David Lee 
