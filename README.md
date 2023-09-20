@@ -12,7 +12,15 @@ Make file contains commands needed.
 
 * `make run` Runs the program
 <<<<<<< HEAD
+<<<<<<< HEAD
 David was here
 =======
 Doug was here
 >>>>>>> b172dda (Test commit)
+=======
+<<<<<<< Updated upstream
+David was here
+=======
+Yenta was here
+>>>>>>> Stashed changes
+>>>>>>> 13d3292 (yenta change)
