@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from enum import Enum
 from levelup.direction import Direction
 
-EFAULT_CHARACTER_NAMDE = "Character"
+DEFAULT_CHARACTER_NAME = "Character"
 
 #TODO: ADD THINGS YOU NEED FOR STATUS
 @dataclass
@@ -29,13 +29,13 @@ class GameController:
     map: Map
 
     def __init__(self):
-        self.status = GameStatus(EFAULT_CHARACTER_NAMDE)
+        self.status = GameStatus()
 
     def start_game(self):
         self.map = Map()
 
         if self.character == None:
-            self.create_character(EFAULT_CHARACTER_NAMDE)
+            self.create_character(DEFAULT_CHARACTER_NAME)
         self.character.entermap(self.map)
         self.status.running = True
         self.status.current_position = (self.character.current_position.x, self.character.current_position.y)
