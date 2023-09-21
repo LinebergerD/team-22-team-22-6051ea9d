@@ -23,10 +23,8 @@ class GameApp:
     def splash(self):
         print("Welcome to Level UP Game")
         answer = input("Would you like to play (Y/N) ").capitalize()
-        if answer != "Y":
-            #sys.exit()  
+        if answer != "Y":  
             self.quit()
-        #print("Press ctrl+c to quit")
 
     def create_character(self):
         print("\nPress ctrl+c to quit")
