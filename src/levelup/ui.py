@@ -1,3 +1,4 @@
+import sys
 import logging
 from typing import Callable
 from levelup.controller import GameController, Direction, InvalidMoveException
@@ -17,8 +18,16 @@ class GameApp:
             if validation_fn(response):
                 break
         return response
+    def splash(self):
+        print("Welcome to Level UP Game")
+        answer = input("Would you like to play (Y/N) ").capitalize()
+        if answer != "Y":
+            #sys.exit()  
+            self.quit()
+        #print("Press ctrl+c to quit")
 
     def create_character(self):
+        print("\nPress ctrl+c to quit")
         character = self.prompt("Enter character name", lambda x: len(x) > 0)
         self.controller.create_character(character)
 
@@ -33,14 +42,17 @@ class GameApp:
                 self.controller.move(direction)
             except InvalidMoveException:
                 print(f"You cannot move {direction}")
+                print("Did you not read the instructions?!")
             else:
                 print(f"You moved {direction.name}")
             print(self.controller.status)
 
     def start(self):
+        self.splash()
         self.create_character()
         self.controller.start_game()
         self.move_loop()
 
     def quit(self):
+        print(" We don't like QUITTERS!!!")
         print(f"\n\n{self.controller.status}")
