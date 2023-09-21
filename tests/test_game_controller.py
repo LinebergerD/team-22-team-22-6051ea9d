@@ -15,7 +15,7 @@ class TestGameController(TestCase):
         self.assertEqual(arbitrary_name, testobj.status.character_name)
         self.assertIsNotNone(testobj.character)
 
-""" def test_start_game_creates_map_and_enters_char(self):
+    def test_start_game_creates_map_and_enters_char(self):
         testobj = GameController()
         arbitrary_name = "ARBITRARY"
         fake_char = FakeCharacter(arbitrary_name)
@@ -37,5 +37,4 @@ class TestGameController(TestCase):
         testobj.move(arbitrary_direction)
 
         self.assertTrue(fake_char.is_move_called)
-        self.assertEqual(fake_char.last_move_direction, arbitrary_direction)
-"""        
+        self.assertEqual(fake_char.last_move_direction, arbitrary_direction)        
