@@ -1,4 +1,6 @@
 import logging
+from levelup.character import Character
+from levelup.map import Map
 from dataclasses import dataclass
 from enum import Enum
 from levelup.direction import Direction
@@ -23,8 +25,9 @@ class InvalidMoveException(Exception):
 
 class GameController:
 
-
     status: GameStatus
+    character: Character
+    map: Map
 
     def __init__(self):
         self.status = GameStatus()
