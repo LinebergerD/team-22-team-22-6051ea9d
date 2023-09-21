@@ -1,7 +1,7 @@
 import logging
 from dataclasses import dataclass
 from enum import Enum
-
+from levelup.direction import Direction
 
 DEFAULT_CHARACTER_NAME = "Character"
 
