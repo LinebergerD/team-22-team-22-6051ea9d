@@ -16,7 +16,6 @@ class GameStatus:
     current_position: tuple = (-100,-100)
     move_count: int = 0
 
-
 class CharacterNotFoundException(Exception):
     pass
 
