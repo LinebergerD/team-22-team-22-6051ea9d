@@ -17,6 +17,8 @@ class GameApp:
             response = input(f"\n{menu}\n> ")
             if validation_fn(response):
                 break
+            elif menu == f"Where would you like to go? {VALID_DIRECTIONS}\n(or ctrl+c to quit)":
+                print("\n*****Did you not read the instructions?!*****")
         return response
     def splash(self):
         print("Welcome to Level UP Game")
@@ -42,7 +44,6 @@ class GameApp:
                 self.controller.move(direction)
             except InvalidMoveException:
                 print(f"You cannot move {direction}")
-                print("Did you not read the instructions?!")
             else:
                 print(f"You moved {direction.name}")
             print(self.controller.status)
