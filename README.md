@@ -10,5 +10,5 @@ Make file contains commands needed.
 
 * `make run` Runs the program
 
-* `Hello World!` DLEE test
+
 
