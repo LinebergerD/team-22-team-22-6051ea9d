@@ -43,9 +43,7 @@ class Map ():
             return new_position
         else:
             return current_position
- 18 changes: 18 additions & 0 deletions18  
-src/levelup/position.py
-@@ -0,0 +1,18 @@
+
 class Position ():
 
     x = -100
@@ -62,11 +60,6 @@ class Position ():
             return False
 
 
-
-
- 47 changes: 47 additions & 0 deletions47  
-src/levelup/ui.py
-@@ -0,0 +1,47 @@
 import logging
 from typing import Callable
 from levelup.controller import GameController, InvalidMoveException
