@@ -1,7 +1,7 @@
 from unittest import TestCase
 from levelup.character import Character
 from fake_map import FakeMap
-from levelup.controller import Direction
+from levelup.direction import Direction
 
 class TestCharacter(TestCase):
     ARBITRARY_NAME = "MyName"
