@@ -32,8 +32,9 @@ class GameController:
 
     def start_game(self):
         self.map = Map()
-        if self.character == None:
-            self.create_character(DEFAULT_CHARACTER_NAME)
+        # if self.character == None:
+        print("create_character DEFAULT_CHARACTER_NAME")
+        self.create_character(DEFAULT_CHARACTER_NAME)
         self.character.enter_map(self.map)
         self.status.running = True
         self.status.current_position = (self.character.current_position.x, self.character.current_position.y)
