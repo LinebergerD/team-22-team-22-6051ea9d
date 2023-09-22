@@ -23,7 +23,6 @@ class InvalidMoveException(Exception):
     pass
 
 class GameController:
-
     status: GameStatus
     character: Character
     map: Map
