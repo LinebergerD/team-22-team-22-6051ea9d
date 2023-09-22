@@ -43,7 +43,7 @@ class GameController:
 
 
     # Pre-implemented to demonstrate ATDD
-    # Updating to match DLEE A20230922
+    # Updating to match Desgin DLEE A20230922
     def create_character(self, character_name: str) -> None:
         if character_name is not None and character_name != "":
             self.character = Character(character_name)
